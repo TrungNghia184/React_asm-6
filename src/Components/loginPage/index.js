@@ -46,7 +46,7 @@ export default function LoginPage() {
       />
       <label className="label" for="password">Password</label>
       <input className="input"
-        type="text"
+        type="password"
         id="password"
         onChange={handlePasswordChange}
         required

@@ -84,7 +84,7 @@ export default function SignUp() {
             )}
           </div>
           <div className="form-inputs">
-            <label for="password">Age</label>
+            <label for="password">Password</label>
             <input
               type="password"
               name="password"
