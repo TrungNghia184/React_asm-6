@@ -1,6 +1,3 @@
-import { useFormik } from "formik";
-import * as Yup from "yup";
-import { Component } from "react";
 import React, { useEffect, useState } from "react";
 import "./index.css"
 import {
@@ -26,13 +23,15 @@ export default function LoginPage() {
     let matchedUser = usersList.filter((user) => {
       if (user.username === username && user.password === password) {
         return user
-      }   
+      } 
     });
     if (matchedUser.length > 0) {
       localStorage.setItem('token', true);
       console.log(localStorage.getItem('token'))
       navigate('/')
-    }
+    } else {
+      alert('Wrong username or password')
+    }   
     console.log(matchedUser);
   }
   return (
