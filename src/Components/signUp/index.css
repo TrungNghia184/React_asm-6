@@ -15,8 +15,8 @@
     align-items: center;
 }
 
-.button {
-    width: 150px;
+.button-container .button {
+    width: 200px;
 }
 .form-inputs {
     width: 70%;

@@ -17,4 +17,9 @@
 .label {
     width: 60%;
     margin: 0 auto 0px auto;
+    color: rgb(68, 33, 0);
+    font-size: 20px;
+}
+.login-container h1{
+    color: rgb(68, 33, 0);
 }
