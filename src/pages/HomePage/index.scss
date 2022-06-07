@@ -1,0 +1,26 @@
+.drinks {
+    display: inline-block;
+}
+
+img {
+    width: 100px;
+}
+
+div h1 {
+    color: whitesmoke;
+    font-family: 'IM Fell English', serif;
+    font-size: 100px;
+    letter-spacing: 20px;
+    display: flex;
+    justify-content: center;
+}
+.menu {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    &__items {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}

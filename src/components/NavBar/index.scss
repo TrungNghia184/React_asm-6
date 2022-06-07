@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English&family=Poppins:wght@200&display=swap');
+
+.navbar-container {
+    height: fit-content;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    // background-image: url("https://designingidea.com/wp-content/uploads/2021/03/walnut-wood-surface-is.jpg");
+    background-color: #242E52;
+}
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    &__links{
+        color: white;
+        margin-left: 1vw;
+        font-family: 'Poppins', sans-serif;
+        font-size: 30px;
+    }
+    button {
+        background: none;
+        border: none;
+        color: red;
+        font-size: 30px;
+        font-family: 'Poppins', sans-serif;
+        border-radius: 5px;
+    }
+}

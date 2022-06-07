@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
-import "./index.css"
 import {
   BrowserRouter as Router,
   Navigate,
   useNavigate,
 } from "react-router-dom";
+import "./index.scss"
 export default function LoginPage() {
   const navigate = useNavigate();
   const [username, setUsername] = useState("");

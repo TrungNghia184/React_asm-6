@@ -1,0 +1,44 @@
+.drinks {
+    border: 0.5px solid whitesmoke;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 5px;
+    padding: 5px 0px;
+    &__number {
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        justify-items: center;
+        width: 97%;
+        height: 30px;
+        margin: 2px auto;
+        padding: 0;
+        border-radius: 3px;
+        background-color: rgb(224, 168, 0);
+        font-size: 20px;
+    }
+    &__image {
+        border-radius: 10px;
+        width: 200px;
+        margin: 2px auto;
+    }
+    &__name__container {
+        height: fit-content;
+        margin: auto auto;
+        .name {
+            margin: 0 auto;
+            width: 100%;
+            text-align: center;
+        }
+        .category {
+            margin: 0 auto;
+            width: 100%;
+            text-align: center;
+        }
+    }
+}
+.drinks:hover {
+    border: 3px solid rgb(255, 162, 0);
+}

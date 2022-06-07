@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useFormik } from "formik";
 import * as Yup from "yup";
-import "./index.css";
+import "./index.scss";
 import {
   BrowserRouter as Router,
   Navigate,
@@ -45,9 +45,12 @@ export default function SignUp() {
         if (matchedUser.length > 0) {
           alert('This user already exists')
         } else {
-          console.log('This user does not exist')
           setUsersList(usersList => [...usersList, newUser]);
           alert('Register successful')
+          console.log(usersList)
+          setTimeout(() => {
+            navigate('/login')
+          }, 2000);
         }
       }
       checkForMatchedUser()
@@ -57,7 +60,6 @@ export default function SignUp() {
   useEffect(() => {
     localStorage.setItem("listUsers", JSON.stringify(usersList));
     console.log(JSON.parse(localStorage.getItem("listUsers")))
-    
   }, [usersList]);
   return (
     <div>

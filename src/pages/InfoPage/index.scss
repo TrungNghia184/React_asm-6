@@ -1,0 +1,44 @@
+.drink-info {
+    text-align: center;
+    height: 100vh;
+    
+    h1 {
+        font-size: 70px;
+        text-align: center;
+    }
+    div {
+        border: 4px groove white;
+        border-radius: 10px;
+        display: flex;
+        margin: 0 auto;
+        text-align: start;
+        .image-container {
+            width: 300px;
+            img {
+                width: 100%;
+                padding: 10px 0px;
+            }
+            border: none;
+        }
+        .info-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            border: none;
+            font-size: 20px;
+            margin-left: 10px;
+            padding-top: 10px;
+        }
+    }
+}
+.no-info {
+    font-size: 50px;
+    height: 100vh;
+    button {
+        background-color: rebeccapurple;
+        color: white;
+        border: none;
+        border-radius: 10px;
+    }
+}
