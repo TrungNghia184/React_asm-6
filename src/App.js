@@ -17,6 +17,8 @@ import InfoPage from "./pages/InfoPage"
 import GlobalLoading from "./components/GlobalLoading"
 import "./App.css";
 function App() {
+  localStorage.setItem('token', false);
+  localStorage.setItem('listUsers', JSON.stringify([{'username': 'admin', 'password': 'admin'}]));
   return (
     <div className="App">
       <GlobalLoading/>
